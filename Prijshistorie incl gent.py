@@ -174,7 +174,7 @@ def main():
         st.session_state.data = pd.DataFrame()
 
     if affiliate_id == 123:  # Gent heeft geen API, dus laad statisch bestand
-        st.session_state.data = pd.read_excel('onderdelen gent.xlsx')
+        data = pd.read_excel('onderdelen gent.xlsx')
 
 
         onderdeelnummer = st.text_input('Voer het onderdeelnummer in:')
