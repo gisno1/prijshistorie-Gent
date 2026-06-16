@@ -127,7 +127,7 @@ def get_price_history(df, onderdeelnummer):
 # --- Prijshistorie van één onderdeel ---
 def get_price_history_gent(df, onderdeelnummer):
     history = df[df['Onderdeelnummer'] == onderdeelnummer][
-        ['Onderdeelnummer', 'Verkoopprijs', 'Relatie', 'Vestiging', 'Factuurdatum']
+        ['Onderdeelnummer', 'Verkoopprijs', 'Toegepaste kortingspercentage', 'Relatie', 'Vestiging', 'Factuurdatum']
     ]
     if history.empty:
         return None
